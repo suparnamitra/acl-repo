@@ -1,14 +1,15 @@
 name: Setup Java
-on: workflow_dispatch:
+on:
+  workflow_dispatch:
     inputs:
       java_version:
         default: "17"
         description: select the java version
         type: choice
         options:
-          - 11
-          - 17
-          - 21
+          - "11"
+          - "17"
+          - "21"
 permissions:
   contents: read
   id-token: write
