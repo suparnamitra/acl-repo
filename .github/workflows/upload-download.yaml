@@ -18,6 +18,7 @@ jobs:
   container:
     name: ci container
     needs: [ build ]
+    environment: 'prd'
     runs-on: ubuntu-latest
     steps:
       - name: create artifact
